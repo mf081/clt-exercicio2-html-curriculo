@@ -3,16 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Mateus Fernando</title>
+    <title>Portfólio | Mateus Fernando</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="/style.css"> <!-- Link para o arquivo CSS -->
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Portfólio | Mateus Fernando</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#formacao">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <section class="container-inicio">
+        <section id="inicio" class="container-inicio">
             <div class="conteudo-apresentacao">
                 <h1 class="titulo-principal">MATEUS FERNANDO</h1>
                 <h2 class="subtitulo">DESENVOLVEDOR FRONT END</h2>
@@ -31,7 +60,7 @@
             <img class="minha-foto" src="/img/imagem_de_perfil_quadrada.jpg" alt="Foto de Perfil" width="266px" />
         </section>        
         
-        <section class="container-sobre-mim">
+        <section id="sobre" class="container-sobre-mim">
             <h1 class="titulo-secao">SOBRE MIM</h1>
             <div class="conteudo-sobre-mim">
                 <div class="foto-sobre-mim">
@@ -47,7 +76,7 @@
             </div>
         </section>
         
-        <section class="container-formacao">
+        <section id="formacao" class="container-formacao">
             <h1 class="titulo-principal">FORMAÇÃO</h1>
             <div class="grid-formacao">
                 <div class="card-formacao">
@@ -63,8 +92,7 @@
                 <div class="card-formacao">
                     <h2>Residência Tecnológica</h2>
                     <p>Porto Digital, 2024 - Presente</p>
-                    <p>Programa de imersão que conecta estudantes de ADS a desafios reais propostos por empresas parceiras do Porto Digital, permitindo que trabalhem em projetos relevantes.
-                    </p>
+                    <p>Programa de imersão que conecta estudantes de ADS a desafios reais propostos por empresas parceiras do Porto Digital, permitindo que trabalhem em projetos relevantes.</p>
                 </div>
                 <div class="card-formacao">
                     <h2>Formação Acelerada Softex Fap - Front End</h2>
@@ -84,33 +112,19 @@
             </div>
         </section>
         
-        <section class="secao-habilidades-container">
+        <section id="habilidades" class="secao-habilidades-container">
             <h1>HABILIDADES</h1>
             <div class="secao-habilidades-conteudo">
                 <div class="hard-skills">
                     <h2>Hard Skills:</h2>
                     <ul>
-                        <li>
-                            TypeScript <img src="icone-python.png" alt="Ícone Python" />
-                        </li>
-                        <li>
-                            React <img src="icone-javascript.png" alt="Ícone JavaScript" />
-                        </li>
-                        <li>
-                            Html <img src="icone-unity.png" alt="Ícone Unity" />
-                        </li>
-                        <li>
-                            Css <img src="icone-csharp.png" alt="Ícone C#" />
-                        </li>
-                        <li>
-                            Figma <img src="icone-canva.png" alt="Ícone Canva" />
-                        </li>
-                        <li>
-                            Python <img src="icone-figma.png" alt="Ícone Figma" />
-                        </li>
-                        <li>
-                            MySqL <img src="icone-excel.png" alt="Ícone Excel" />
-                        </li>
+                        <li>TypeScript</li>
+                        <li>React</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Figma</li>
+                        <li>Python</li>
+                        <li>MySQL</li>
                     </ul>
                 </div>
                 
@@ -125,41 +139,87 @@
                 </div>
             </div>
         </section>
-        
-        <!-- 
-        <section class="projects">
-            <h1>PROJETOS</h1>
-            <div class="project">
-                <h2>LupaStartup</h2>
-                <p>
-                    Focada em inovações tecnológicas para letramento digital de idosos.
-                </p>
-                <a href="https://lupaidososs.netlify.app/" target="_blank">
-                    <img src="https://lupaidososs.netlify.app/" alt="Projeto LupaStartup" />
-                </a>
-            </div>
-            <div class="project">
-                <h2>MoveRecife</h2>
-                <p>
-                    Desenvolver e implementar o aplicativo MoveRecife, fornecendo feedback em tempo real sobre a lotação dos ônibus, disponibilidade de assentos preferenciais e alertas de acessibilidade para usuários com deficiência visual.
-                </p>
-                <a href="https://moverecife.com/" target="_blank">Visitar Projeto</a>
-            </div>
+
+        <section id="formulario class="secao-contato-container">
+            <h1>CONTATO</h1>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="(XX) XXXXX-XXXX" required pattern="\(\d{2}\) \d{5}-\d{4}">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="language" class="form-label">Língua Aplicada no Serviço</label>
+                    <select class="form-select" id="language" required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="ingles">Inglês</option>
+                        <option value="espanhol">Espanhol</option>
+                        <option value="frances">Francês</option>
+                        <option value="portugues">Português (pt-BR)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="fileUpload" class="form-label">Upload de Arquivo (PDF, DOC, DOCX, JPEG, PNG)</label>
+                    <input type="file" class="form-control" id="fileUpload" accept=".pdf,.doc,.docx,.jpeg,.png">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Linguagens Preferidas</label>
+                    <select class="form-select" id="preferredLanguages" multiple required>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tipo de Banco de Dados</label>
+                    <div>
+                        <input type="radio" id="sql" name="databaseType" value="sql" required>
+                        <label for="sql">SQL</label>
+                        <input type="radio" id="nosql" name="databaseType" value="nosql" required>
+                        <label for="nosql">NoSQL</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="meetingShift" class="form-label">Turno Preferido para Reuniões</label>
+                    <select class="form-select" id="meetingShift" required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="suggestedTime" class="form-label">Melhor Horário Sugerido para Reuniões</label>
+                    <input type="time" class="form-control" id="suggestedTime" required>
+                </div>
+                <div class="mb-3">
+                    <label for="deliveryDate" class="form-label">Previsão de Entrega Desejada</label>
+                    <input type="date" class="form-control" id="deliveryDate" required>
+                </div>
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </section>
-        
-        <section class="contact-info">
-            <h2>CONTATO</h2>
-            <div class="contact-item">
-                <span>Email:</span> 
-                <a href="mailto:mateusfss368@gmail.com">mateusfss368@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                <span>LinkedIn:</span> 
-                <a href="https://www.linkedin.com/in/mateus-fernando-41230301/" target="_blank">mateusfernando</a>
-            </div>
-        </section>  
-        -->
-        
+
     </main>
+
+
 </body>
 </html>
